@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": "./",
+    "rootDir": "./", // Nastaví rootDir na kořen projektu
     "outDir": "./dist",
     "target": "ES6",
     "module": "commonjs",

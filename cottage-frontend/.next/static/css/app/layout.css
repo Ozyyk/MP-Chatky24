@@ -555,9 +555,6 @@ video {
 .top-0 {
   top: 0px;
 }
-.top-16 {
-  top: 4rem;
-}
 .top-4 {
   top: 1rem;
 }
@@ -571,10 +568,6 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -583,9 +576,6 @@ video {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -674,9 +664,6 @@ video {
 .min-w-full {
   min-width: 100%;
 }
-.max-w-2xl {
-  max-width: 42rem;
-}
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -716,9 +703,6 @@ video {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .flex-col {
   flex-direction: column;
 }
@@ -733,9 +717,6 @@ video {
 }
 .justify-between {
   justify-content: space-between;
-}
-.gap-10 {
-  gap: 2.5rem;
 }
 .gap-4 {
   gap: 1rem;
@@ -909,9 +890,6 @@ video {
 .object-cover {
   object-fit: cover;
 }
-.p-10 {
-  padding: 2.5rem;
-}
 .p-12 {
   padding: 3rem;
 }
@@ -942,10 +920,6 @@ video {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -957,10 +931,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .py-8 {
   padding-top: 2rem;
@@ -1174,11 +1144,6 @@ body {
 .hover\:bg-mygreen:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(35 82 71 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-red-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-green-600:hover {
