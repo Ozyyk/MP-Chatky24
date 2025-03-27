@@ -1,67 +1,3 @@
-// import { Request, Response } from "express";
-// import bcrypt from "bcryptjs";
-// import jwt from "jsonwebtoken";
-// import User, { IUser } from "../models/User";
-// import { sendEmail } from "./emailServiceController";
-
-// // jwt csr ky
-// const JWT_SECRET = "o3vYyNlgK8uNWdVYjmpsplNlV2RlGBZSc77Rz4L45";
-
-// //register
-// export const register = async (req: Request, res: Response): Promise<void> => {
-//   const { email, password, isAdmin } = req.body;
-
-//   try {
-//     // Zkontrolujte, zda uživatel již existuje
-//     const existingUser = await User.findOne({ email });
-//     if (existingUser) {
-//       res.status(400).json({ message: 'Uživatel již existuje.' });
-//       return;
-//     }
-
-//     // Zahashujte heslo
-//     const hashedPassword = await bcrypt.hash(password, 10);
-
-//     // Vytvořte nového uživatele
-//     const newUser: IUser = new User({ email, password: hashedPassword, isAdmin: isAdmin || false });
-//     await newUser.save();
-
-//     const subject = '🎉 Vítejte v Chatkách - Vaše dobrodružství začíná!';
-// const htmlContent = `
-//   <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-//     <div style="text-align: center; padding: 20px; background-color: #235247; color: white;">
-//       <h1>Vítejte v Chatkách!</h1>
-//     </div>
-//     <div style="padding: 20px;">
-//       <p style="font-size: 18px; font-weight: bold;">Dobrý den, ${email},</p>
-//       <p>
-//         Jsme nadšeni, že jste se rozhodli připojit k naší komunitě Chatky! Od teď máte přístup k široké nabídce 
-//         chat a ubytování, kde si můžete užít klidné chvíle, rodinné dovolené nebo dobrodružství v přírodě.
-//       </p>
-//       <div style="margin: 20px 0; text-align: center;">
-//         <a href="" style="text-decoration: none; background-color: #235247; color: white; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: bold;">Přihlaste se</a>
-//       </div>
-//       <p>
-//         Pokud máte jakékoliv dotazy nebo potřebujete pomoc, neváhejte nás kontaktovat na 
-//         <a href="mailto:chatkyprovas@gmail.com" style="color: #235247;">chatkyprovas@gmail.com</a>.
-//       </p>
-//       <p>Naší prioritou je vaše spokojenost!</p>
-//       <p style="font-size: 16px; font-weight: bold;">S pozdravem,</p>
-//       <p>Tým Chatky</p>
-//     </div>
-//     <div style="text-align: center; padding: 10px; font-size: 12px; background-color: #f9f9f9; color: #666;">
-//       Tento e-mail byl odeslán automaticky. Prosím, neodpovídejte na něj.
-//     </div>
-//   </div>
-// `;
-// await sendEmail(email, subject, htmlContent);
-
-//     res.status(201).json({ message: 'Uživatel úspěšně zaregistrován a e-mail odeslán.' });
-//   } catch (error) {
-//     console.error('Chyba při registraci:', error);
-//     res.status(500).json({ message: 'Chyba serveru.', error });
-//   }
-// };
 import { Request, Response } from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
@@ -142,41 +78,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
     res.status(500).json({ message: "Chyba serveru.", error });
   }
 };
-// //login
-// export const login = async (req: Request, res: Response): Promise<void> => {
-//   const { email, password } = req.body;
 
-//   try {
-//     // Hledání uživatele podle emailu
-//     const user = await User.findOne({ email });
-//     if (!user) {
-//       res.status(400).json({ message: "Neplatné přihlašovací údaje." });
-//       return;
-//     }
-
-//     // Ověření hesla
-//     const isMatch = await bcrypt.compare(password, user.password);
-//     if (!isMatch) {
-//       res.status(400).json({ message: "Neplatné přihlašovací údaje." });
-//       return;
-//     }
-
-//     // Generování JWT tokenu
-//     const token = jwt.sign(
-//       { id: user._id, email: user.email, isAdmin: user.isAdmin }, // Přidání emailu
-//       JWT_SECRET,
-//       { expiresIn: "1h" }
-//     );
-
-//     res.status(200).json({
-//       message: "Přihlášení úspěšné.",
-//       token,
-//       isAdmin: user.isAdmin,
-//     });
-//   } catch (error) {
-//     res.status(500).json({ message: "Chyba serveru.", error });
-//   }
-// };
 export const login = async (req: Request, res: Response): Promise<void> => {
   const { email, password } = req.body;
 

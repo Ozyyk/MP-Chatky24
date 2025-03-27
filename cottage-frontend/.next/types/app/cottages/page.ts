@@ -1,4 +1,4 @@
-// File: /Users/ondrejbelohradsky/Documents/Cottage/cottage-frontend/src/app/cottages/page.tsx
+// File: /Users/ondrejbelohradsky/Documents/Cottages-MP/Untitled/Cottage/cottage-frontend/src/app/cottages/page.tsx
 import * as entry from '../../../../src/app/cottages/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

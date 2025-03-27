@@ -48,11 +48,11 @@ export const addComment = async (req: Request, res: Response): Promise<void> => 
     }
 
     // Ověření, že aktuální datum je po "end_date"
-    // const currentDate = new Date();
-    // if (currentDate < reservation.end_date) {
-    //   res.status(400).json({ message: "Komentář lze přidat pouze po skončení rezervace." });
-    //   return;
-    // }
+    const currentDate = new Date();
+    if (currentDate < reservation.end_date) {
+      res.status(400).json({ message: "Komentář lze přidat pouze po skončení rezervace." });
+      return;
+    }
 
     // Ověření, zda už komentář existuje pro tuto rezervaci
     const existingComment = await Comment.findOne({ reservationID });

@@ -1,33 +1,3 @@
-// "use client";
-
-// import { useRouter } from "next/navigation";
-
-// export default function Footer() {
-//   const router = useRouter();
-
-//   const handleNavigateToRequest = () => {
-//     router.push("/request");
-//   };
-
-//   return (
-//     <footer className="bg-gradient-to-r from-darkgreen via-mygreen to-lightgreen text-white shadow-lg">
-//       <div className="container mx-auto text-center space-y-4">
-//         <p className="text-sm">
-//           &copy; 2024 Rezervační systém Chat. Všechna práva vyhrazena.
-//         </p>
-//         <p className="text-sm">
-//           Vytvořil <span className="text-lightgreen font-semibold">Ondřej</span>.
-//         </p>
-//         <button
-//           onClick={handleNavigateToRequest}
-//           className="bg-mygreen hover:bg-lightgreen text-white font-semibold py-2 px-4 rounded"
-//         >
-//           Přidat chatu
-//         </button>
-//       </div>
-//     </footer>
-//   );
-// }
 'use client';
 
 import { useRouter } from "next/navigation";

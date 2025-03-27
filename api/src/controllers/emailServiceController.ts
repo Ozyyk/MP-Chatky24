@@ -5,12 +5,6 @@ const SMTP_URL = 'https://api.brevo.com/v3/smtp/email';
 const SENDER_EMAIL = 'chatkyprovas@gmail.com'; // Váš ověřený e-mail
 const SENDER_NAME = 'Chatky'; // Název vaší aplikace nebo organizace
 
-/**
- * Funkce pro odesílání e-mailu
- * @param toEmail E-mailová adresa příjemce
- * @param subject Předmět e-mailu
- * @param htmlContent Obsah e-mailu v HTML
- */
 export const sendEmail = async (
   toEmail: string,
   subject: string,

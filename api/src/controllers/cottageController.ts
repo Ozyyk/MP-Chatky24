@@ -131,54 +131,6 @@ export const deleteCottageById = async (req: Request, res: Response): Promise<vo
     res.status(500).json({ message: "Chyba při mazání chaty.", error: (error as Error).message });
   }
 };
-//filtrovani chat
-// 
-// export const filterCottages = async (req: Request, res: Response): Promise<void> => {
-//   try {
-//     const {
-//       region,
-//       minPrice,
-//       maxPrice,
-//       maxPeopleCount,
-//       roomCount,
-//       wifi,
-//       bedding_available,
-//       parking_available,
-//       animal_allowed,
-//     } = req.body;
-
-//     const filterConditions: any = {};
-
-//     // Filtrování podle regionu
-//     if (region) filterConditions.region = region;
-
-//     // Filtrování podle ceny
-//     if (minPrice) filterConditions.rent_per_day = { ...filterConditions.rent_per_day, $gte: Number(minPrice) };
-//     if (maxPrice) filterConditions.rent_per_day = { ...filterConditions.rent_per_day, $lte: Number(maxPrice) };
-
-//     // Filtrování podle maximálního počtu osob
-//     if (maxPeopleCount) filterConditions.maxPeopleCount = { $gte: Number(maxPeopleCount) };
-
-//     // Filtrování podle počtu pokojů
-//     if (roomCount) filterConditions.roomCount = { $gte: Number(roomCount) };
-
-//     // Boolean filtry
-//     if (typeof wifi === "boolean") filterConditions.wifi = wifi;
-//     if (typeof bedding_available === "boolean") filterConditions.bedding_available = bedding_available;
-//     if (typeof parking_available === "boolean") filterConditions.parking_available = parking_available;
-//     if (typeof animal_allowed === "boolean") filterConditions.animal_allowed = animal_allowed;
-
-//     // Hledání chat podle filtru
-//     const cottages = await Cottage.find(filterConditions);
-
-//     res.status(200).json(cottages);
-//   } catch (error) {
-//     res.status(500).json({
-//       message: "Chyba při filtrování chat.",
-//       error: (error as Error).message,
-//     });
-//   }
-// };
 export const filterCottages = async (req: Request, res: Response): Promise<void> => {
   try {
     const {
