@@ -9,7 +9,7 @@ import commentRoutes from "./routes/commentRoutes";
 
 
 const app = express();
-const PORT = 5002;
+// const PORT = 5002;
 
 
 // Mongo
@@ -34,6 +34,10 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Database connection error:", err));
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+// });
+
+
+
+// "start": "node dist/server.js",
