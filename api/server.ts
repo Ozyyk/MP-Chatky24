@@ -37,7 +37,7 @@ mongoose
 // app.listen(PORT, () => {
 //   console.log(`Server running on port ${PORT}`);
 // });
-
+export default app;
 
 
 // "start": "node dist/server.js",
