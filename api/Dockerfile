@@ -20,7 +20,7 @@ RUN tsc
 # Copy other necessary files
 COPY . .
 
-EXPOSE 8080
+EXPOSE 5002
 
 # Run the compiled JavaScript
 CMD ["node", "dist/server.js"]

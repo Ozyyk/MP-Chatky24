@@ -12,7 +12,7 @@ const reservationRoutes_1 = __importDefault(require("./routes/reservationRoutes"
 const stripeRoutes_1 = __importDefault(require("./routes/stripeRoutes"));
 const commentRoutes_1 = __importDefault(require("./routes/commentRoutes"));
 const app = (0, express_1.default)();
-// const PORT = 5002;
+const PORT = 5002;
 // Mongo
 const MONGO_URI = "mongodb+srv://belohradskyondra:Ondra2005@cot.k9utw.mongodb.net/users?retryWrites=true&w=majority";
 // MW
@@ -31,8 +31,8 @@ mongoose_1.default
     .connect(MONGO_URI)
     .then(() => console.log("Connected to MongoDB"))
     .catch((err) => console.error("Database connection error:", err));
-// app.listen(PORT, () => {
-//   console.log(`Server running on port ${PORT}`);
-// });
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 exports.default = app;
 // "start": "node dist/server.js",
