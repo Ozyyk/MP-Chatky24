@@ -76,7 +76,7 @@ export default function CottageList() {
   const router = useRouter();
   const fetchCottages = async () => {
     try {
-      const res = await fetch('http://localhost:5002/api/cottages'); // Fetching all cottages
+      const res = await fetch('http://jarda.site:5002/api/cottages'); // Fetching all cottages
       if (res.ok) {
         const data = await res.json();
         console.log('Fetched cottages:', data); // Debugging
@@ -86,7 +86,7 @@ export default function CottageList() {
         // Zpracování hodnocení
         const cottagesWithRatings = await Promise.all(
           data.map(async (cottage: Cottage) => {
-            const ratingRes = await fetch(`http://localhost:5002/api/comments/${cottage._id}`);
+            const ratingRes = await fetch(`http://jarda.site:5002/api/comments/${cottage._id}`);
             if (ratingRes.ok) {
               const comments = await ratingRes.json();
               const averageRating =

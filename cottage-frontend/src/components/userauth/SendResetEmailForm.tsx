@@ -8,7 +8,7 @@ export default function SendResetEmailForm() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5002/api/auth/send-reset-email", {
+      const res = await fetch("http://jarda.site:5002/api/auth/send-reset-email", {
         method: "POST",
         body: JSON.stringify({ email }),
         headers: { "Content-Type": "application/json" },

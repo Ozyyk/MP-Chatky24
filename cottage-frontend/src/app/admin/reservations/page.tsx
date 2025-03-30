@@ -51,7 +51,7 @@ export default function ReservationsPage() {
       if (!token) return;
 
       try {
-        const res = await fetch('http://localhost:5002/api/reservations/admin', {
+        const res = await fetch('http://jarda.site:5002/api/reservations/admin', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

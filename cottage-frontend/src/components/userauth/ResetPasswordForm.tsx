@@ -20,7 +20,7 @@ export default function ResetPasswordForm() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5002/api/auth/reset-password", {
+      const res = await fetch("http://jarda.site:5002/api/auth/reset-password", {
         method: "POST",
         body: JSON.stringify({ token, newPassword }),
         headers: { "Content-Type": "application/json" },

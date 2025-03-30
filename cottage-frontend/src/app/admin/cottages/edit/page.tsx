@@ -41,7 +41,7 @@ export default function EditCottages() {
       if (!token) return;
 
       try {
-        const res = await fetch('http://localhost:5002/api/cottages', {
+        const res = await fetch('http://jarda.site:5002/api/cottages', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

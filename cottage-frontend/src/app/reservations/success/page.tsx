@@ -23,7 +23,7 @@ export default function SuccessPage() {
           return;
         }
 
-        const res = await fetch(`http://localhost:5002/api/reservations/${reservationId}`, {
+        const res = await fetch(`http://jarda.site:5002/api/reservations/${reservationId}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

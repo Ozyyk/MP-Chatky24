@@ -42,7 +42,7 @@ export default function ProfilePage() {
 
     const fetchReservations = async () => {
       setLoading(true);
-      const res = await fetch('http://localhost:5002/api/reservations/confirmed', {
+      const res = await fetch('http://jarda.site:5002/api/reservations/confirmed', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

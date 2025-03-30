@@ -21,7 +21,7 @@ export default function AddComment() {
       return;
     }
 
-    const res = await fetch('http://localhost:5002/api/comments', {
+    const res = await fetch('http://jarda.site:5002/api/comments', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
