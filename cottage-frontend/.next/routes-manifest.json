@@ -1,1 +1,194 @@
-{"version":3,"pages404":true,"caseSensitive":false,"basePath":"","redirects":[{"source":"/:path+/","destination":"/:path+","internal":true,"statusCode":308,"regex":"^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"}],"headers":[],"dynamicRoutes":[{"page":"/admin/cottages/edit/[id]","regex":"^/admin/cottages/edit/([^/]+?)(?:/)?$","routeKeys":{"nxtPid":"nxtPid"},"namedRegex":"^/admin/cottages/edit/(?<nxtPid>[^/]+?)(?:/)?$"},{"page":"/admin/reservations/[id]","regex":"^/admin/reservations/([^/]+?)(?:/)?$","routeKeys":{"nxtPid":"nxtPid"},"namedRegex":"^/admin/reservations/(?<nxtPid>[^/]+?)(?:/)?$"},{"page":"/cottages/[id]","regex":"^/cottages/([^/]+?)(?:/)?$","routeKeys":{"nxtPid":"nxtPid"},"namedRegex":"^/cottages/(?<nxtPid>[^/]+?)(?:/)?$"}],"staticRoutes":[{"page":"/","regex":"^/(?:/)?$","routeKeys":{},"namedRegex":"^/(?:/)?$"},{"page":"/_not-found","regex":"^/_not\\-found(?:/)?$","routeKeys":{},"namedRegex":"^/_not\\-found(?:/)?$"},{"page":"/admin","regex":"^/admin(?:/)?$","routeKeys":{},"namedRegex":"^/admin(?:/)?$"},{"page":"/admin/comments","regex":"^/admin/comments(?:/)?$","routeKeys":{},"namedRegex":"^/admin/comments(?:/)?$"},{"page":"/admin/cottages","regex":"^/admin/cottages(?:/)?$","routeKeys":{},"namedRegex":"^/admin/cottages(?:/)?$"},{"page":"/admin/cottages/add","regex":"^/admin/cottages/add(?:/)?$","routeKeys":{},"namedRegex":"^/admin/cottages/add(?:/)?$"},{"page":"/admin/cottages/delete","regex":"^/admin/cottages/delete(?:/)?$","routeKeys":{},"namedRegex":"^/admin/cottages/delete(?:/)?$"},{"page":"/admin/cottages/edit","regex":"^/admin/cottages/edit(?:/)?$","routeKeys":{},"namedRegex":"^/admin/cottages/edit(?:/)?$"},{"page":"/admin/reservations","regex":"^/admin/reservations(?:/)?$","routeKeys":{},"namedRegex":"^/admin/reservations(?:/)?$"},{"page":"/contact","regex":"^/contact(?:/)?$","routeKeys":{},"namedRegex":"^/contact(?:/)?$"},{"page":"/cottages","regex":"^/cottages(?:/)?$","routeKeys":{},"namedRegex":"^/cottages(?:/)?$"},{"page":"/forgotpassword","regex":"^/forgotpassword(?:/)?$","routeKeys":{},"namedRegex":"^/forgotpassword(?:/)?$"},{"page":"/login","regex":"^/login(?:/)?$","routeKeys":{},"namedRegex":"^/login(?:/)?$"},{"page":"/profile","regex":"^/profile(?:/)?$","routeKeys":{},"namedRegex":"^/profile(?:/)?$"},{"page":"/register","regex":"^/register(?:/)?$","routeKeys":{},"namedRegex":"^/register(?:/)?$"},{"page":"/request","regex":"^/request(?:/)?$","routeKeys":{},"namedRegex":"^/request(?:/)?$"},{"page":"/reservations","regex":"^/reservations(?:/)?$","routeKeys":{},"namedRegex":"^/reservations(?:/)?$"},{"page":"/reservations/addComment","regex":"^/reservations/addComment(?:/)?$","routeKeys":{},"namedRegex":"^/reservations/addComment(?:/)?$"},{"page":"/reservations/cancel","regex":"^/reservations/cancel(?:/)?$","routeKeys":{},"namedRegex":"^/reservations/cancel(?:/)?$"},{"page":"/reservations/success","regex":"^/reservations/success(?:/)?$","routeKeys":{},"namedRegex":"^/reservations/success(?:/)?$"},{"page":"/resetpassword","regex":"^/resetpassword(?:/)?$","routeKeys":{},"namedRegex":"^/resetpassword(?:/)?$"},{"page":"/rules","regex":"^/rules(?:/)?$","routeKeys":{},"namedRegex":"^/rules(?:/)?$"}],"dataRoutes":[],"rsc":{"header":"RSC","varyHeader":"RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch","prefetchHeader":"Next-Router-Prefetch","didPostponeHeader":"x-nextjs-postponed","contentTypeHeader":"text/x-component","suffix":".rsc","prefetchSuffix":".prefetch.rsc"},"rewrites":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/admin/cottages/edit/[id]",
+      "regex": "^/admin/cottages/edit/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/cottages/edit/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/reservations/[id]",
+      "regex": "^/admin/reservations/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/reservations/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/cottages/[id]",
+      "regex": "^/cottages/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/cottages/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/comments",
+      "regex": "^/admin/comments(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/comments(?:/)?$"
+    },
+    {
+      "page": "/admin/cottages",
+      "regex": "^/admin/cottages(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/cottages(?:/)?$"
+    },
+    {
+      "page": "/admin/cottages/add",
+      "regex": "^/admin/cottages/add(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/cottages/add(?:/)?$"
+    },
+    {
+      "page": "/admin/cottages/delete",
+      "regex": "^/admin/cottages/delete(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/cottages/delete(?:/)?$"
+    },
+    {
+      "page": "/admin/cottages/edit",
+      "regex": "^/admin/cottages/edit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/cottages/edit(?:/)?$"
+    },
+    {
+      "page": "/admin/reservations",
+      "regex": "^/admin/reservations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/reservations(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/cottages",
+      "regex": "^/cottages(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cottages(?:/)?$"
+    },
+    {
+      "page": "/forgotpassword",
+      "regex": "^/forgotpassword(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/forgotpassword(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/profile",
+      "regex": "^/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile(?:/)?$"
+    },
+    {
+      "page": "/register",
+      "regex": "^/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register(?:/)?$"
+    },
+    {
+      "page": "/request",
+      "regex": "^/request(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/request(?:/)?$"
+    },
+    {
+      "page": "/reservations",
+      "regex": "^/reservations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reservations(?:/)?$"
+    },
+    {
+      "page": "/reservations/addComment",
+      "regex": "^/reservations/addComment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reservations/addComment(?:/)?$"
+    },
+    {
+      "page": "/reservations/cancel",
+      "regex": "^/reservations/cancel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reservations/cancel(?:/)?$"
+    },
+    {
+      "page": "/reservations/success",
+      "regex": "^/reservations/success(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reservations/success(?:/)?$"
+    },
+    {
+      "page": "/resetpassword",
+      "regex": "^/resetpassword(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resetpassword(?:/)?$"
+    },
+    {
+      "page": "/rules",
+      "regex": "^/rules(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/rules(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}
