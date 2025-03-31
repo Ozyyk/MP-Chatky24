@@ -45,7 +45,7 @@ export default function DeleteComments() {
       if (!token) return;
 
       try {
-        const res = await fetch('http://jarda.site:5002/api/comments', {
+        const res = await fetch('https://belohrad.jarda.site/api/comments', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -75,7 +75,7 @@ export default function DeleteComments() {
     if (!confirm('Opravdu chcete smazat tento komentář?')) return;
 
     try {
-      const res = await fetch(`http://jarda.site:5002/api/comments/${id}`, {
+      const res = await fetch(`https://belohrad.jarda.site/api/comments/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,

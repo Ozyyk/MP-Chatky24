@@ -59,7 +59,7 @@ export default function AddCottage() {
     });
 
     try {
-      const response = await fetch('http://jarda.site:5002/api/cottages', {
+      const response = await fetch('https://belohrad.jarda.site/api/cottages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

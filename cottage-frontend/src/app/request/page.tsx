@@ -45,7 +45,7 @@ export default function AddCottageForm() {
     const formattedData = { ...formData, image_urls: parsedImageUrls };
 
     try {
-      const res = await fetch("http://jarda.site:5002/api/send-email", {
+      const res = await fetch("https://belohrad.jarda.site/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data: JSON.stringify(formattedData) }),

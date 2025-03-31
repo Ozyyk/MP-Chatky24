@@ -21,7 +21,7 @@ function AddComment() {
       return;
     }
 
-    const res = await fetch('http://jarda.site:5002/api/comments', {
+    const res = await fetch('https://belohrad.jarda.site/api/comments', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

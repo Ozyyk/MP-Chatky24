@@ -11,7 +11,7 @@ export default function LoginForm() {
 
   const handleLogin = async () => {
     try {
-      const res = await fetch('http://jarda.site:5002/api/auth/login', {
+      const res = await fetch('https://belohrad.jarda.site/api/auth/login', {
         method: 'POST',
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },

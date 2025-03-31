@@ -30,7 +30,7 @@ export default function UserReservations() {
         return;
       }
 
-      const res = await fetch('http://jarda.site:5002/api/reservations', {
+      const res = await fetch('https://belohrad.jarda.site/api/reservations', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -53,7 +53,7 @@ export default function UserReservations() {
     const token = localStorage.getItem('token');
     if (!token) return;
 
-    const res = await fetch(`http://jarda.site:5002/api/reservations/${id}`, {
+    const res = await fetch(`https://belohrad.jarda.site/api/reservations/${id}`, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${token}`,
@@ -76,7 +76,7 @@ export default function UserReservations() {
         return;
       }
 
-      const res = await fetch('http://jarda.site:5002/api/stripe/create-checkout-session', {
+      const res = await fetch('https://belohrad.jarda.site/api/stripe/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -61,7 +61,7 @@ export default function CottageDetail() {
 
     const fetchCottage = async () => {
       try {
-        const res = await fetch(`http://jarda.site:5002/api/cottages/${id}`);
+        const res = await fetch(`https://belohrad.jarda.site/api/cottages/${id}`);
         if (res.ok) {
           const data = await res.json();
           setCottage(data);
@@ -73,7 +73,7 @@ export default function CottageDetail() {
 
     const fetchReservations = async () => {
       try {
-        const res = await fetch(`http://jarda.site:5002/api/reservations/cottage/${id}`);
+        const res = await fetch(`https://belohrad.jarda.site/api/reservations/cottage/${id}`);
         if (res.ok) {
           const data = await res.json();
           setReservations(data);
@@ -85,7 +85,7 @@ export default function CottageDetail() {
 
     const fetchComments = async () => {
       try {
-        const res = await fetch(`http://jarda.site:5002/api/comments/${id}`);
+        const res = await fetch(`https://belohrad.jarda.site/api/comments/${id}`);
         if (res.ok) {
           const data = await res.json();
           setComments(data);
@@ -175,7 +175,7 @@ export default function CottageDetail() {
       return;
     }
 
-    const res = await fetch('http://jarda.site:5002/api/reservations', {
+    const res = await fetch('https://belohrad.jarda.site/api/reservations', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -39,7 +39,7 @@ export default function EditReservation({ params }: { params: Promise<{ id: stri
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const res = await fetch(`http://jarda.site:5002/api/reservations/${id}`, {
+      const res = await fetch(`https://belohrad.jarda.site/api/reservations/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -60,7 +60,7 @@ export default function EditReservation({ params }: { params: Promise<{ id: stri
     const token = localStorage.getItem('token');
     if (!token) return;
 
-    const res = await fetch(`http://jarda.site:5002/api/reservations/${id}/status`, {
+    const res = await fetch(`https://belohrad.jarda.site/api/reservations/${id}/status`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

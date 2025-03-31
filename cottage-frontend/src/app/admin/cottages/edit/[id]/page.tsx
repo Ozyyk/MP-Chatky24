@@ -84,7 +84,7 @@ export default function EditCottage() {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const res = await fetch(`http://jarda.site:5002/api/cottages/${id}`, {
+        const res = await fetch(`https://belohrad.jarda.site/api/cottages/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -124,7 +124,7 @@ export default function EditCottage() {
     });
 
     try {
-      const res = await fetch(`http://jarda.site:5002/api/cottages/${id}`, {
+      const res = await fetch(`https://belohrad.jarda.site/api/cottages/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

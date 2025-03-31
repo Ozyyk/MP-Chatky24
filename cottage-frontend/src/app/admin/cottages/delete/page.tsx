@@ -42,7 +42,7 @@ export default function DeleteCottages() {
       if (!token) return;
 
       try {
-        const res = await fetch('http://jarda.site:5002/api/cottages', {
+        const res = await fetch('https://belohrad.jarda.site/api/cottages', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -72,7 +72,7 @@ export default function DeleteCottages() {
     if (!confirm('Opravdu chcete smazat tuto chatu?')) return;
 
     try {
-      const res = await fetch(`http://jarda.site:5002/api/cottages/${id}`, {
+      const res = await fetch(`https://belohrad.jarda.site/api/cottages/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
