@@ -1,8 +1,8 @@
-
 'use client';
 
 import { useRouter } from 'next/navigation';
 import AdminNavbar from '@/components/Navbars/adminNavbar';
+import { useEffect } from 'react';
 
 const REGIONS = [
   'Jihočeský kraj',
@@ -33,6 +33,7 @@ const TOURIST_AREAS = [
   'Žďárské vrchy',
   'Moravský kras',
 ];
+
 
 export default function AddCottage() {
   const router = useRouter();
@@ -93,7 +94,9 @@ export default function AddCottage() {
     }
   };
 
-  verifyAdmin();
+  useEffect(() => {
+    verifyAdmin()
+  }, [])
 
   return (
     <div>
