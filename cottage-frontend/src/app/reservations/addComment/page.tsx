@@ -1,9 +1,9 @@
 'use client';
 
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 
-export default function AddComment() {
+function AddComment() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const reservationID = searchParams.get('reservationID');
@@ -82,5 +82,13 @@ export default function AddComment() {
         </button>
       </form>
     </div>
+  );
+}
+
+export default function AddCom() {
+  return (
+  <Suspense>
+    <AddComment/>
+  </Suspense>
   );
 }

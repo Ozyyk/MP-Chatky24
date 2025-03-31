@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 
-export default function SuccessPage() {
+function SuccessPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -62,22 +62,11 @@ export default function SuccessPage() {
     </div>
   );
 }
-// "use client";
 
-// import { useRouter } from "next/navigation";
-
-// export default function SuccessPage() {
-//   const router = useRouter();
-
-//   return (
-//     <div className="min-h-screen flex items-center justify-center bg-lightergreen">
-//       <div className="text-center p-8 bg-white shadow-md rounded-md">
-//         <h1 className="text-3xl font-bold text-mygreen mb-4">Platba úspěšná!</h1>
-//         <p>Děkujeme za vaši platbu. Rezervace byla potvrzena.</p>
-//         <button onClick={() => router.push("/reservations")} className="bg-mygreen text-white px-4 py-2 rounded-md">
-//           Zpět na moje rezervace
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
+export default function Suc() {
+  return (
+  <Suspense>
+    <SuccessPage/>
+  </Suspense>
+  );
+}
